@@ -80,11 +80,11 @@ public class BookStoreTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Getting book info")
+    @DisplayName("Getting a book info")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void getBookInfo() {
-        step("Get book info by using ISBN", () -> {
+        step("Get a book info by ISBN", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .accept("application/json")
