@@ -20,7 +20,6 @@ public class WebShopTests extends TestBase {
 
     @Test
     @DisplayName("User registration")
-    @Feature("User registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
     void registration() {
@@ -50,7 +49,6 @@ public class WebShopTests extends TestBase {
 
     @Test
     @DisplayName("Adding an item to the Shopping Cart")
-    @Feature("Adding an item to the Shopping Cart")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
     void addItemToShoppingCart() {
@@ -85,7 +83,6 @@ public class WebShopTests extends TestBase {
 
     @Test
     @DisplayName("Sending feedback by 'Contact Us' form")
-    @Feature("Sending feedback by 'Contact Us' form")
     @Severity(SeverityLevel.MINOR)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
     void leaveFeedback() {

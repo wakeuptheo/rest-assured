@@ -26,7 +26,6 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("New user creation")
-    @Feature("New user creation")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void createUser() {
@@ -49,7 +48,6 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("User info updating")
-    @Feature("User info updating")
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void updateUser() {
@@ -72,7 +70,6 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("Successful user registration")
-    @Feature("Successful user registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void successfulRegistration() {
@@ -95,7 +92,6 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("Unsuccessful user registration")
-    @Feature("Unsuccessful user registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void unsuccessfulRegistration() {
@@ -117,7 +113,6 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("Checking project support message")
-    @Feature("Checking project support message")
     @Severity(SeverityLevel.MINOR)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void userSupport() {

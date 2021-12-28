@@ -22,7 +22,6 @@ public class TestWithGroovy {
 
     @Test
     @DisplayName("Finding a user by name in the list of users")
-    @Feature("Finding a user by name")
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void findUserByName() {
@@ -45,7 +44,6 @@ public class TestWithGroovy {
 
     @Test
     @DisplayName("Finding a user by surname in the list of users")
-    @Feature("Finding a user by surname")
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void findUserBySurname() {

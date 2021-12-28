@@ -25,7 +25,6 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("User registration")
-    @Feature("User registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void userRegistration() {
@@ -54,7 +53,6 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("User token generation")
-    @Feature("User token generation")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void tokenGenerate() {
@@ -84,7 +82,6 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("Getting a book info")
-    @Feature("Getting a book info")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void getBookInfo() {
