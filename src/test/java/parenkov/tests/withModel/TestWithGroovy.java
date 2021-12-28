@@ -4,6 +4,7 @@ import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +16,7 @@ import static parenkov.tests.withModel.Specs.baseRequest;
 import static parenkov.tests.withModel.Specs.baseSuccessfulResponse;
 
 @Story("Reqres.in")
+@Owner("Fedor Parenkov")
 public class TestWithGroovy {
 
     @Test

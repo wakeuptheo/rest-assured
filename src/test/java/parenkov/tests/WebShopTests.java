@@ -4,6 +4,7 @@ import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,7 @@ import static org.hamcrest.Matchers.is;
 import static parenkov.filters.CustomLogFilter.customLogFilter;
 
 @Story("Demo Web Shop")
+@Owner("Fedor Parenkov")
 public class WebShopTests extends TestBase {
 
     @Test
