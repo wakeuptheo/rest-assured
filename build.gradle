@@ -8,9 +8,6 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 def junitVersion = "5.8.1",
     allureVersion = "2.16.1",
     selenideVersion = "5.24.4",
@@ -54,8 +51,10 @@ dependencies {
     )
 }
 
-compileTestJava {
+tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 tasks.withType(Test) {
@@ -64,13 +63,8 @@ tasks.withType(Test) {
 
     testLogging {
         lifecycle {
-            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
     }
 }
-
-//test {
-//    useJUnitPlatform()
-//}

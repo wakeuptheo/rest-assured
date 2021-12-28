@@ -1,5 +1,8 @@
 package parenkov.tests.withModel;
 
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,6 +19,8 @@ public class TestWithGroovy {
 
     @Test
     @DisplayName("Finding a user by name in the list of users")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void findUserByName() {
         step("Find a user by name", () -> {
             given()
@@ -36,6 +41,8 @@ public class TestWithGroovy {
 
     @Test
     @DisplayName("Finding a user by surname in the list of users")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void findUserBySurname() {
         step("Find a user by surname", () -> {
             given()

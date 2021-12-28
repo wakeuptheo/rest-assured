@@ -1,7 +1,6 @@
 package parenkov.tests;
 
 import com.codeborne.selenide.Configuration;
-import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
 import parenkov.config.App;

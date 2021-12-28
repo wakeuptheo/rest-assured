@@ -1,6 +1,9 @@
 package parenkov.tests;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,6 +22,8 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("User registration")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void userRegistration() {
         step("Register new user", () -> {
             given()
@@ -45,6 +50,8 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("User token generation")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void tokenGenerate() {
         step("Generate user token", () -> {
             given()
@@ -72,6 +79,8 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("Getting book info")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void getBookInfo() {
         step("Get book info by using ISBN", () -> {
             given()

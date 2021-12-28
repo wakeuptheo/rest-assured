@@ -1,5 +1,8 @@
 package parenkov.tests.withModel;
 
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,6 +23,8 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("New user creation")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void createUser() {
         step("Create new user", () -> {
         User data = given()
@@ -40,6 +45,8 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("User info updating")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void updateUser() {
         step("Update user info", () -> {
         User data = given()
@@ -60,6 +67,8 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("Successful user registration")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void successfulRegistration() {
         step("Sign up new user", () -> {
         User data = given()
@@ -80,6 +89,8 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("Unsuccessful user registration")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void unsuccessfulRegistration() {
         step("Sign up new user with unfilled email field", () -> {
         User data = given()
@@ -99,6 +110,8 @@ public class TestsWithLombokModel {
 
     @Test
     @DisplayName("Checking project support message")
+    @Severity(SeverityLevel.MINOR)
+    @Link(name = "Swagger", url = "https://reqres.in/")
     void userSupport() {
         step("Check project support message", () -> {
         UserSupport support = given()
