@@ -6,6 +6,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -24,6 +25,7 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("User registration")
+    @Feature("User registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void userRegistration() {
@@ -52,6 +54,7 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("User token generation")
+    @Feature("User token generation")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void tokenGenerate() {
@@ -81,6 +84,7 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @DisplayName("Getting a book info")
+    @Feature("Getting a book info")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://demoqa.com/swagger/")
     void getBookInfo() {

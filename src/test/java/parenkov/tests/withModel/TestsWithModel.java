@@ -5,6 +5,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import parenkov.models.User;
@@ -25,6 +26,7 @@ public class TestsWithModel {
 
     @Test
     @DisplayName("New user creation")
+    @Feature("New user creation")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void createUser() {
@@ -47,6 +49,7 @@ public class TestsWithModel {
 
     @Test
     @DisplayName("User info updating")
+    @Feature("User info updating")
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void updateUser() {
@@ -69,6 +72,7 @@ public class TestsWithModel {
 
     @Test
     @DisplayName("Successful user registration")
+    @Feature("Successful user registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void successfulRegistration() {
@@ -91,6 +95,7 @@ public class TestsWithModel {
 
     @Test
     @DisplayName("Unsuccessful user registration")
+    @Feature("Unsuccessful user registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void unsuccessfulRegistration() {
@@ -112,6 +117,7 @@ public class TestsWithModel {
 
     @Test
     @DisplayName("Checking project support message")
+    @Feature("Checking project support message")
     @Severity(SeverityLevel.MINOR)
     @Link(name = "Swagger", url = "https://reqres.in/")
     void userSupport() {
