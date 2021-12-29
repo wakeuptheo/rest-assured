@@ -9,6 +9,7 @@ public class UserSupport {
     public User getSupport() {
         return support;
     }
+
     public void setSupport(User support) {
         this.support = support;
     }

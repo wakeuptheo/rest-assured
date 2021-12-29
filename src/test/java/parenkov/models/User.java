@@ -15,6 +15,7 @@ public class User {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -22,6 +23,7 @@ public class User {
     public String getJob() {
         return job;
     }
+
     public void setJob(String job) {
         this.job = job;
     }
@@ -29,6 +31,7 @@ public class User {
     public Integer getId() {
         return id;
     }
+
     public void setId(Integer id) {
         this.id = id;
     }
@@ -36,6 +39,7 @@ public class User {
     public String getToken() {
         return token;
     }
+
     public void setToken(String token) {
         this.token = token;
     }
@@ -43,6 +47,7 @@ public class User {
     public String getError() {
         return error;
     }
+
     public void setError(String error) {
         this.error = error;
     }
@@ -50,6 +55,7 @@ public class User {
     public String getUrl() {
         return url;
     }
+
     public void setUrl(String url) {
         this.url = url;
     }
@@ -57,6 +63,7 @@ public class User {
     public String getText() {
         return text;
     }
+
     public void setText(String text) {
         this.text = text;
     }
