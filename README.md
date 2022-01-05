@@ -31,7 +31,7 @@
 <img src="./images/logos/selenide.svg" width="42" /> `Selenide` - написание исходного кода;<br/>
 <img src="./images/logos/gradle.svg" width="35" height="35" /> `Gradle` - сборка проекта;<br/>
 <img src="./images/logos/jenkins.svg" width="35" height="35" /> `Jenkins` - конфигурация и запуск сборок;<br/>
-<img src="./images/logos/postman.svg" width="29" height="29" /> `Postman` - отправка тестовых запросов;<br/>
+<img src="./images/logos/postman.svg" width="28" height="28" /> `Postman` - отправка тестовых запросов;<br/>
 <img src="./images/logos/allure.svg" width="28" /> `Allure Report` - формирование отчетности по итогам тестирования;<br/>
 <img src="./images/logos/allure_testops.svg" width="24.7" /> `Allure TestOps` - создание тестовой документации;<br/>
 <img src="./images/logos/jira.svg" width="30" /> `Jira` - создание задачи в таск-трекере.<br/>
