@@ -1,4 +1,4 @@
-package parenkov.tests.withModel;
+package parenkov.tests.withSpecsAndModels;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;

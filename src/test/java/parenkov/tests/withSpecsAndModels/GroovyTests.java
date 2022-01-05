@@ -1,4 +1,4 @@
-package parenkov.tests.withModel;
+package parenkov.tests.withSpecsAndModels;
 
 import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
@@ -12,12 +12,12 @@ import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static parenkov.filters.CustomLogFilter.customLogFilter;
-import static parenkov.tests.withModel.Specs.baseRequest;
-import static parenkov.tests.withModel.Specs.baseSuccessfulResponse;
+import static parenkov.tests.withSpecsAndModels.Specs.baseRequest;
+import static parenkov.tests.withSpecsAndModels.Specs.baseSuccessfulResponse;
 
 @Story("Reqres.in")
 @Owner("Fedor Parenkov")
-public class TestWithGroovy {
+public class GroovyTests {
 
     @Test
     @DisplayName("Finding a user by name in the list of users")

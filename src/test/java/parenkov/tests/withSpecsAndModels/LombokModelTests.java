@@ -1,4 +1,4 @@
-package parenkov.tests.withModel;
+package parenkov.tests.withSpecsAndModels;
 
 import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
@@ -7,21 +7,21 @@ import io.qameta.allure.Story;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import parenkov.models.lombok.User;
-import parenkov.models.lombok.UserSupport;
+import parenkov.models.User;
+import parenkov.models.UserSupport;
 
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static parenkov.filters.CustomLogFilter.customLogFilter;
-import static parenkov.tests.withModel.Specs.baseRequest;
-import static parenkov.tests.withModel.Specs.createUserResponse;
-import static parenkov.tests.withModel.Specs.baseSuccessfulResponse;
-import static parenkov.tests.withModel.Specs.unsuccessfulRegistrationResponse;
+import static parenkov.tests.withSpecsAndModels.Specs.baseRequest;
+import static parenkov.tests.withSpecsAndModels.Specs.createUserResponse;
+import static parenkov.tests.withSpecsAndModels.Specs.baseSuccessfulResponse;
+import static parenkov.tests.withSpecsAndModels.Specs.unsuccessfulRegistrationResponse;
 
 @Story("Reqres.in")
 @Owner("Fedor Parenkov")
-public class TestsWithLombokModel {
+public class LombokModelTests {
 
     @Test
     @DisplayName("New user creation")
