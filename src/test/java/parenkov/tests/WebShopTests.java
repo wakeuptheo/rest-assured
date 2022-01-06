@@ -22,12 +22,12 @@ public class WebShopTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
     void registration() throws Exception {
-        String payload = request(0, 1, 1);
+        String body = request(0, 1, 1);
         step("Register new user", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded")
-                    .body(payload)
+                    .body(body)
                     .log().method()
                     .log().uri()
                     .log().headers()
@@ -46,13 +46,13 @@ public class WebShopTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
     void addItemToShoppingCart() throws Exception {
-        String payload = request(0, 2, 1);
+        String body = request(0, 2, 1);
         String cookie = request(0, 2, 2);
         step("Add an item with custom specs to the Shopping Cart", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
-                    .body(payload)
+                    .body(body)
                     .cookie(cookie)
                     .log().method()
                     .log().uri()
@@ -76,13 +76,13 @@ public class WebShopTests extends TestBase {
     @Severity(SeverityLevel.MINOR)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
     void leaveFeedback() throws Exception {
-        String payload = request(0, 3, 1);
+        String body = request(0, 3, 1);
         String cookie = request(0, 3, 2);
         step("Fill the contact form and send feedback", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded")
-                    .body(payload)
+                    .body(body)
                     .cookie(cookie)
                     .log().method()
                     .log().uri()
