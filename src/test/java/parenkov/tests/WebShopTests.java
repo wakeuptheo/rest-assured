@@ -21,18 +21,13 @@ public class WebShopTests extends TestBase {
     @DisplayName("User registration")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
-    void registration() {
+    void registration() throws Exception {
+        String payload = request(0, 1, 1);
         step("Register new user", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded")
-                    .body("__RequestVerificationToken=yharMk0UzLqakit" +
-                            "-MPnBjOJc6oyYNnsn8u_CWOwbVk9djHYwKWUFoxe" +
-                            "0_2nndWrMgtJaual3dxIZ6SkidpixmRpzv6NucA-" +
-                            "EDDWc0k5Wmrk1&Gender=M&FirstName=Alex&La" +
-                            "stName=Qwerty&Email=qwerty%40www.co&Pass" +
-                            "word=123456&ConfirmPassword=123456&regis" +
-                            "ter-button=Register")
+                    .body(payload)
                     .log().method()
                     .log().uri()
                     .log().headers()
@@ -50,19 +45,15 @@ public class WebShopTests extends TestBase {
     @DisplayName("Adding an item to the Shopping Cart")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
-    void addItemToShoppingCart() {
+    void addItemToShoppingCart() throws Exception {
+        String payload = request(0, 2, 1);
+        String cookie = request(0, 2, 2);
         step("Add an item with custom specs to the Shopping Cart", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
-                    .body("product_attribute_74_5_26=82" +
-                            "&product_attribute_74_6_27=85" +
-                            "&product_attribute_74_3_28=87" +
-                            "&product_attribute_74_8_29=88" +
-                            "&product_attribute_74_8_29=89" +
-                            "&product_attribute_74_8_29=90" +
-                            "&addtocart_74.EnteredQuantity=2")
-                    .cookie("Nop.customer=69589107-6373-41bd-891d-47fb44277adc;")
+                    .body(payload)
+                    .cookie(cookie)
                     .log().method()
                     .log().uri()
                     .log().headers()
@@ -84,14 +75,15 @@ public class WebShopTests extends TestBase {
     @DisplayName("Sending feedback by 'Contact Us' form")
     @Severity(SeverityLevel.MINOR)
     @Link(name = "Main page", url = "http://demowebshop.tricentis.com")
-    void leaveFeedback() {
+    void leaveFeedback() throws Exception {
+        String payload = request(0, 3, 1);
+        String cookie = request(0, 3, 2);
         step("Fill the contact form and send feedback", () -> {
             given()
                     .filter(customLogFilter().withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded")
-                    .body("FullName=Alex+Qwerty&Email=qwerty%40www.co" +
-                            "&Enquiry=Test+enquiry&send-email=Submit")
-                    .cookie("Nop.customer=69589107-6373-41bd-891d-47fb44277adc;")
+                    .body(payload)
+                    .cookie(cookie)
                     .log().method()
                     .log().uri()
                     .log().headers()
