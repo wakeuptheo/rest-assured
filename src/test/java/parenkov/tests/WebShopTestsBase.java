@@ -8,12 +8,11 @@ import parenkov.config.App;
 
 import java.io.InputStream;
 
-public class TestBase {
+public class WebShopTestsBase {
     @BeforeAll
     static void testConfiguration() {
         RestAssured.baseURI = App.config.apiUrl();
         Configuration.baseUrl = App.config.webUrl();
-        Configuration.startMaximized = true;
     }
 
     public String request(int sheet, int row, int cell) throws Exception {

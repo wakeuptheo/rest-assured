@@ -17,7 +17,7 @@ import static parenkov.filters.CustomLogFilter.customLogFilter;
 
 @Story("Book Store")
 @Owner("Fedor Parenkov")
-public class BookStoreTests extends TestBase {
+public class BookStoreTests {
 
     Faker faker = new Faker();
     String randomNum = faker.number().digits(4);

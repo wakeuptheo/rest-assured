@@ -15,7 +15,7 @@ import static parenkov.filters.CustomLogFilter.customLogFilter;
 
 @Story("Demo Web Shop")
 @Owner("Fedor Parenkov")
-public class WebShopTests extends TestBase {
+public class WebShopTests extends WebShopTestsBase {
 
     @Test
     @DisplayName("User registration")
