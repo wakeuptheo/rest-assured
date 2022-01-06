@@ -1,5 +1,5 @@
 ## Автоматизация тестов для REST API
-В данном проекте представлен пример API автотестов на проверку функциональности сайтов [**Demo Web Shop**](http://demowebshop.tricentis.com), [**Book Store demoqa.com**](https://demoqa.com/books/), [**ReqRes.in**](https://reqres.in/).<br/>
+В данном проекте представлен пример API автотестов на проверку функциональности сайтов [**Demo Web Shop**](http://demowebshop.tricentis.com), [**Book Store (demoqa.com)**](https://demoqa.com/books/), [**ReqRes.in**](https://reqres.in/).<br/>
 ### Тестируемая функциональность
 
 
